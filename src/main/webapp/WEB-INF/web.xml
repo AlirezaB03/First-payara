@@ -12,6 +12,14 @@
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.xhtml</url-pattern>
     </servlet-mapping>
+    <context-param>
+        <param-name>primefaces.CSP</param-name>
+        <param-value>reportOnly</param-value>
+    </context-param>
+    <context-param>
+        <param-name>primefaces.CSP_REPORT_ONLY_POLICY</param-name>
+        <param-value>report-uri /my-csp-reports</param-value>
+    </context-param>
 
     <welcome-file-list>
         <welcome-file>Test.xhtml</welcome-file>
